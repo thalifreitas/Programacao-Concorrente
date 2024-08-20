@@ -27,7 +27,7 @@ void *incrementArray(void *arg){
    pthread_exit(NULL);
 }
 
-
+/* função que realiza a operação de incremento dos elementos do vetor de forma sequencial */
 void incrementArraySequencial(int array[], int n){
    for (int i = 0; i < n; i++){
       array[i]++;
