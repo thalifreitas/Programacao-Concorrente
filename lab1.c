@@ -73,7 +73,7 @@ int main(int argc, char *argv[]){
 
    // verifica se foram passados os dois argumentos necessários
    if (argc != 3){
-      printf("--ERRO: informe a qtde de threads <%s> <nthreads>\n", argv[0]);
+      printf("--ERRO: informe a quantidade de threads e quantidade de elementos do vetor.\n");
       return 1;
    }
 
