@@ -1,0 +1,12 @@
+Disciplina: Programação Concorrente
+Profa.: Silvana Rossetto
+Aluna: Thalita de Freitas Silva
+DRE: 120048493
+Laboratório: 2 - Avaliação dos resultados encontrados
+
+
+Pequenas mudanças no modo de calcular o produto interno entre dois vetores podem gerar resultados ligeiramente diferentes devido à forma como os erros de arredondamento são propagados durante as operações matemáticas, uma vez que números do tipo flutuante possuem precisão finita, o que implica que o computador precisa realizar o arredondamento desses valores. Por essa razão, o resultado do produto interno entre dois vetores, quando calculado de forma sequencial e de forma concorrente, pode não ser idêntico.
+
+Na forma sequencial, esse cálculo é realizado da seguinte maneira: a cada índice do vetor, em ordem crescente, dois elementos (um de cada vetor) são multiplicados entre si, e esse resultado é guardado e somado ao próximo produto entre dois elementos dos vetores. Dessa forma, os cálculos são feitos em uma ordem específica e o erro de arredondamento é propagado também de forma específica.
+
+Já na forma concorrente, o vetor é dividido em partes, sendo cada uma dessas partes uma sequência de índices do vetor, que é processada por cada thread criada, e somente ao final do programa o resultado retornado por cada thread é somado para se chegar ao resultado final do produto interno. Dessa vez, não há uma ordem específica em que essa soma é feita, o que, consequentemente, altera também a forma como os erros de arredondamento se propagam, resultando em um valor diferente daquele obtido na operação sequencial.
