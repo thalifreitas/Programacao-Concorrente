@@ -2,7 +2,7 @@ Disciplina: Programação Concorrente
 Profa.: Silvana Rossetto
 Aluna: Thalita de Freitas Silva
 DRE: 120048493
-Laboratório: 2 - Avaliação dos resultados encontrados
+Laboratório: 2 - Avaliação dos resultados encontrados 
 
 
 Pequenas mudanças no modo de calcular o produto interno entre dois vetores podem gerar resultados ligeiramente diferentes devido à forma como os erros de arredondamento são propagados durante as operações matemáticas, uma vez que números do tipo flutuante possuem precisão finita, o que implica que o computador precisa realizar o arredondamento desses valores. Por essa razão, o resultado do produto interno entre dois vetores, quando calculado de forma sequencial e de forma concorrente, pode não ser idêntico.
