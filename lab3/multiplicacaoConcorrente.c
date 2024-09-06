@@ -1,3 +1,5 @@
+/* Programa que realiza a multiplicação entre duas matrizes de forma concorrente */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
